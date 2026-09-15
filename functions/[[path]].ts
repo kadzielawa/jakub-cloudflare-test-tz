@@ -3,10 +3,10 @@ export async function onRequest(context: PagesFunction) {
 
   const upstream = new URL(incoming);
   upstream.protocol = "https:";
-  upstream.hostname = "rooampay.americanexpress.com";
+  upstream.hostname = "rooamtab.americanexpress.com";
 
   const headers = new Headers(context.request.headers);
-  headers.set("Host", "rooampay.americanexpress.com");
+  headers.set("Host", "rooamtab.americanexpress.com");
 
   return fetch(upstream, {
     method: context.request.method,
